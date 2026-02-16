@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-16T17:03:24.854645",
+  "generated_at": "2026-02-16T18:54:40.207027",
   "financial_statements": {
     "income_statement": {
       "revenue": 46300.0,
@@ -11,12 +11,12 @@
     },
     "balance_sheet": {
       "cash": 903800.0,
-      "accounts_receivable": 0.0,
-      "inventory": 0.0,
-      "total_assets": 903800.0,
-      "accounts_payable": -96200.0,
-      "total_liabilities": -96200.0,
-      "total_equity": 1000000.0,
+      "accounts_receivable": 46300.0,
+      "inventory": 71300.0,
+      "total_assets": 1021400.0,
+      "accounts_payable": 3700.0,
+      "total_liabilities": 3700.0,
+      "total_equity": 1017700.0,
       "is_balanced": true
     }
   },
@@ -135,4 +135,4 @@
     "architecture": "Event-driven agent system"
   },
   "disclaimer": "All data shown is from a test environment with simulated transactions. No real business data or personally identifiable information is displayed."
-}
+}%   
