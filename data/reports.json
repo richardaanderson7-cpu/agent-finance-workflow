@@ -1,0 +1,138 @@
+{
+  "generated_at": "2026-02-16T19:05:24.930317",
+  "financial_statements": {
+    "income_statement": {
+      "revenue": 46300.0,
+      "cogs": 28600.0,
+      "gross_profit": 17700.0,
+      "net_income": 17700.0,
+      "gross_margin_pct": 38.2,
+      "net_margin_pct": 38.2
+    },
+    "balance_sheet": {
+      "cash": 903800.0,
+      "accounts_receivable": 46300.0,
+      "inventory": 71300.0,
+      "total_assets": 1021400.0,
+      "accounts_payable": 3700.0,
+      "total_liabilities": 3700.0,
+      "total_equity": 1017700.0,
+      "is_balanced": true
+    }
+  },
+  "operational_metrics": {
+    "total_transactions": 164,
+    "sales_orders": 16,
+    "purchase_orders": 25,
+    "total_customers": 8,
+    "total_vendors": 5,
+    "inventory_units": 20125
+  },
+  "recent_activity": [
+    {
+      "type": "Payment",
+      "date": "2026-02-16",
+      "description": "Transaction 1"
+    },
+    {
+      "type": "Payment",
+      "date": "2026-02-16",
+      "description": "Transaction 2"
+    },
+    {
+      "type": "Payment",
+      "date": "2026-02-16",
+      "description": "Transaction 3"
+    },
+    {
+      "type": "Payment",
+      "date": "2026-02-16",
+      "description": "Transaction 4"
+    },
+    {
+      "type": "Payment",
+      "date": "2026-02-16",
+      "description": "Transaction 5"
+    },
+    {
+      "type": "Payment",
+      "date": "2026-02-16",
+      "description": "Transaction 6"
+    },
+    {
+      "type": "Payment",
+      "date": "2026-02-16",
+      "description": "Transaction 7"
+    },
+    {
+      "type": "Payment",
+      "date": "2026-02-16",
+      "description": "Transaction 8"
+    },
+    {
+      "type": "Payment",
+      "date": "2026-02-16",
+      "description": "Transaction 9"
+    },
+    {
+      "type": "Payment",
+      "date": "2026-02-16",
+      "description": "Transaction 10"
+    }
+  ],
+  "system_capabilities": [
+    {
+      "category": "Order Processing",
+      "capabilities": [
+        "Reads customer orders from email",
+        "Extracts order details using AI",
+        "Validates inventory availability",
+        "Auto-creates customers with duplicate detection",
+        "Generates sales orders and invoices",
+        "Updates inventory automatically"
+      ]
+    },
+    {
+      "category": "Intelligence & Learning",
+      "capabilities": [
+        "Remembers customer preferences across sessions",
+        "Understands vague requests (e.g., 'send me the usual')",
+        "Thread-aware conversation handling",
+        "Confidence-based decision making",
+        "Learns vendor quirks over time"
+      ]
+    },
+    {
+      "category": "Purchase & Payments",
+      "capabilities": [
+        "Creates purchase orders to vendors",
+        "Performs 3-way matching (PO vs Receipt vs Invoice)",
+        "Detects potential duplicate payments",
+        "Generates payment batches with AI analysis",
+        "Parses natural language approval responses"
+      ]
+    },
+    {
+      "category": "Accounting & Controls",
+      "capabilities": [
+        "Maintains double-entry accounting",
+        "Auto-approves small discounts (<10%)",
+        "Flags large variances for review",
+        "Complete audit trail with reasoning",
+        "Real-time financial reporting"
+      ]
+    }
+  ],
+  "tech_stack": {
+    "ai_model": "Claude Sonnet 4",
+    "languages": [
+      "Python"
+    ],
+    "integrations": [
+      "Gmail API",
+      "Google Sheets API"
+    ],
+    "architecture": "Event-driven agent system"
+  },
+  "disclaimer": "All data shown is from a test environment with simulated transactions. No real business data or personally identifiable information is displayed."
+}

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-First Finance Operations | Agent System Demo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .metric-card {
+            transition: transform 0.2s;
+        }
+        .metric-card:hover {
+            transform: translateY(-4px);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center">
+                    <h1 class="text-xl font-bold text-gray-900">AI-First Finance</h1>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#overview" class="text-gray-700 hover:text-gray-900">Overview</a>
+                    <a href="#reports" class="text-gray-700 hover:text-gray-900">Reports</a>
+                    <a href="#capabilities" class="text-gray-700 hover:text-gray-900">Capabilities</a>
+                    <a href="#architecture" class="text-gray-700 hover:text-gray-900">Architecture</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="gradient-bg text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-5xl font-bold mb-4">AI-First Finance Operations</h1>
+                <p class="text-xl mb-8 text-gray-100">
+                    Autonomous agents handling end-to-end financial workflows with human oversight
+                </p>
+                <div class="flex justify-center space-x-4">
+                    <a href="#reports" class="bg-white text-purple-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100">
+                        View Live Reports
+                    </a>
+                    <a href="#capabilities" class="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:bg-opacity-10">
+                        See Capabilities
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overview Section -->
+    <section id="overview" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">The Experiment</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    What if finance operations were designed from the ground up with AI agents as first-class citizens?
+                    This system demonstrates autonomous transaction processing with appropriate human oversight.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 mt-12">
+                <div class="text-center">
+                    <div class="bg-purple-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Autonomous Processing</h3>
+                    <p class="text-gray-600">Agents handle 85-90% of routine transactions without human intervention</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Smart Controls</h3>
+                    <p class="text-gray-600">Human approval required for high-stakes decisions like payments</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Learning System</h3>
+                    <p class="text-gray-600">Remembers preferences and patterns to improve over time</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Reports Section -->
+    <section id="reports" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Live Financial Reports</h2>
+            <p class="text-center text-gray-600 mb-12">Real data from the test environment (updated in real-time)</p>
+
+            <!-- Metrics Grid -->
+            <div id="metrics-grid" class="grid md:grid-cols-4 gap-6 mb-12">
+                <!-- Will be populated by JavaScript -->
+            </div>
+
+            <!-- Financial Statements -->
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Income Statement -->
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-bold mb-4 text-gray-900">Income Statement</h3>
+                    <div id="income-statement" class="space-y-3">
+                        <!-- Will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Balance Sheet -->
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-bold mb-4 text-gray-900">Balance Sheet</h3>
+                    <div id="balance-sheet" class="space-y-3">
+                        <!-- Will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Capabilities Section -->
+    <section id="capabilities" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">System Capabilities</h2>
+            
+            <div id="capabilities-grid" class="grid md:grid-cols-2 gap-8">
+                <!-- Will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture Section -->
+    <section id="architecture" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">System Architecture</h2>
+            
+            <div class="bg-white rounded-lg shadow-md p-8 mb-8">
+                <h3 class="text-xl font-bold mb-4">Order to Cash (O2C) Flow</h3>
+                <div class="bg-gray-50 p-6 rounded-lg font-mono text-sm">
+                    <div class="space-y-2">
+                        <div>📧 Customer Email → <span class="text-purple-600">Operations Agent</span></div>
+                        <div class="ml-8">↓ Check Memory (customer preferences)</div>
+                        <div class="ml-8">↓ Parse Order (AI extraction)</div>
+                        <div class="ml-8">↓ Validate (inventory, pricing)</div>
+                        <div class="ml-8">↓ Create SO + Invoice</div>
+                        <div class="ml-8">↓ Record GL Entries</div>
+                        <div class="ml-8">↓ Update Memory</div>
+                        <div class="ml-8">↓ Send Confirmation</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-8 mb-8">
+                <h3 class="text-xl font-bold mb-4">Procure to Pay (P2P) Flow</h3>
+                <div class="bg-gray-50 p-6 rounded-lg font-mono text-sm">
+                    <div class="space-y-2">
+                        <div>📧 Vendor Invoice → <span class="text-purple-600">Purchasing Agent</span></div>
+                        <div class="ml-8">↓ Check Memory (vendor quirks)</div>
+                        <div class="ml-8">↓ Extract Invoice Data</div>
+                        <div class="ml-8">↓ 3-Way Match (PO vs Receipt vs Invoice)</div>
+                        <div class="ml-8">↓ Record AP Liability</div>
+                        <div class="ml-8">↓ Update Memory</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-8">
+                <h3 class="text-xl font-bold mb-4">Payment Processing Flow</h3>
+                <div class="bg-gray-50 p-6 rounded-lg font-mono text-sm">
+                    <div class="space-y-2">
+                        <div>⏰ Weekly Trigger → <span class="text-purple-600">Payment Agent</span></div>
+                        <div class="ml-8">↓ Analyze Unpaid Invoices</div>
+                        <div class="ml-8">↓ AI Prioritization (cash flow + relationships)</div>
+                        <div class="ml-8">↓ Email Approval Request → 👤 Human</div>
+                        <div class="ml-8">↓ Parse Natural Language Response</div>
+                        <div class="ml-8">↓ Execute Approved Payments</div>
+                        <div class="ml-8">↓ Update GL + Memory</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">Technology Stack</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 rounded-lg p-6">
+                    <h3 class="text-lg font-semibold mb-3">AI & Processing</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>• Claude Sonnet 4 (Anthropic)</li>
+                        <li>• Python agents</li>
+                        <li>• Event-driven architecture</li>
+                        <li>• Memory system (JSON)</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg p-6">
+                    <h3 class="text-lg font-semibold mb-3">Integrations</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>• Gmail API (email processing)</li>
+                        <li>• Google Sheets API (reporting)</li>
+                        <li>• PDF extraction (invoices)</li>
+                        <li>• OAuth 2.0 authentication</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg p-6">
+                    <h3 class="text-lg font-semibold mb-3">Data & Accounting</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>• Double-entry bookkeeping</li>
+                        <li>• CSV data storage</li>
+                        <li>• Complete audit trail</li>
+                        <li>• Real-time reporting</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-gray-400 text-sm mb-2" id="disclaimer">
+                <!-- Populated by JavaScript -->
+            </p>
+            <p class="text-gray-500 text-xs">
+                Built as an experimental proof-of-concept • February 2026
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
